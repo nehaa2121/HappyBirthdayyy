@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, [Friend's Name]!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff69b4; /* Pink for fun */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .message {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        #letter {
+            display: none; /* Hidden by default */
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            font-style: italic;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday, Shubhu!</h1>
+    <div class="message">
+        <p>Wishing you the best day ever! 🎉</p>
+        <p>Click the button below to read a special letter.</p>
+        <button onclick="revealLetter()">Reveal Letter</button>
+    </div>
+    <div id="letter">
+        <h2>A Special Letter for You</h2>
+        <p>Dear Shubhu,</p>
+        <p>Happy Birthday! You've been an amazing friend, and I'm so grateful to have you in my life. Here's to more adventures, laughs, and memories together. Love you lots!</p>
+        <p>From, Your Tanu</p>
+    </div>
+
+    <script>
+        function revealLetter() {
+            const letter = document.getElementById('letter');
+            letter.style.display = 'block'; // Shows the letter
+        }
+    </script>
+</body>
+</html>
